@@ -1,0 +1,198 @@
+*{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background: rgb(178, 235, 238);
+    font-family: 'Secular One', sans-serif;
+}
+
+*::selection{
+    background: black;
+    color: white;
+}
+
+
+img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 650px;
+    margin-top: 30px;
+}
+
+h1{
+    margin-top: 90px;
+    margin-bottom: 120px;
+    font-size: 42px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+.contenedorPregunta1,.contenedorPregunta2,.contenedorPregunta3,.contenedorPregunta4,.contenedorPregunta5,.contenedorPregunta6,.contenedorPregunta7,.contenedorPregunta8,.contenedorPregunta9,.contenedorPregunta10{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.itemsP1,.itemsP2,.itemsP3,.itemsP4,.itemsP5,.itemsP6,.itemsP7,.itemsP8,.itemsP9,.itemsP10{
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.mostrarMensajeFinal{
+    position: relative;
+    text-align: center;
+    text-justify: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 32px;
+
+    animation-name: desplazar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    transition-timing-function: normal;
+
+}
+
+
+@keyframes desplazar {
+
+    0%{
+        
+        left: -30px;
+        
+
+    }
+
+    
+    
+    100%{
+
+        left: 30px;
+        
+
+    }
+
+}
+
+
+
+.respuestas{
+        text-align: center;
+        text-justify: center;
+        margin-bottom: 100px;
+        font-size: 26px;
+
+}
+
+.contenedorMarcador{
+    height: 280px;
+    width: 100px;
+    left: 20px;
+    position: fixed;
+    border: solid blue 2px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 100px;
+    text-align: center;
+    text-justify: center;
+
+}
+
+.marcador{
+    position: relative;
+    background: transparent;
+}
+
+
+.contenedorRespuestas1,.contenedorRespuestas2,.contenedorRespuestas3,.contenedorRespuestas4,.contenedorRespuestas5,.contenedorRespuestas6,.contenedorRespuestas7,.contenedorRespuestas8,.contenedorRespuestas9,.contenedorRespuestas10{
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 180px;
+}
+.respuestaCorrecta1,.respuestaCorrecta2,.respuestaCorrecta3,.respuestaCorrecta4,.respuestaCorrecta5,.respuestaCorrecta6,.respuestaCorrecta7,.respuestaCorrecta8,.respuestaCorrecta9,.respuestaCorrecta10{
+    color: rgb(14, 192, 14);
+    font-size: 22px;
+    
+    
+}
+.respuestaIncorrecta1,.respuestaIncorrecta2,.respuestaIncorrecta3,.respuestaIncorrecta4,.respuestaIncorrecta5,.respuestaIncorrecta6,.respuestaIncorrecta7,.respuestaIncorrecta8,.respuestaIncorrecta9,.respuestaIncorrecta10{
+    color: rgb(227, 11, 11);
+    font-size: 22px;
+    
+}
+
+.boton{
+    padding: 8px;
+    width: 100px;
+    background: rgb(12, 12, 227);
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+
+
+}
+
+.boton:hover{
+    background: rgb(16, 100, 217);
+}
+
+label{
+    font-size: 19px;
+    background: transparent;
+}
+
+a{
+    margin-bottom: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+a:link {
+    color:  black;
+}
+a:visited {
+    color:  black;
+}
+a:hover {
+    color: blue;
+    font-size: 24px;
+}
+a:active {
+    color:  black;
+}
+
+
+
+input{
+    cursor: pointer;   
+}
+
+.botonInput{
+    padding: 6px;
+    background: rgba(65, 65, 255, 0.492);
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
